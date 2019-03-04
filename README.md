@@ -141,4 +141,6 @@ the `dateCellWrapper` wrapper component, this one appears line above the output 
 
 The required component `timeGutterHeader` is present on the calendar but not captured in the typings.
 
-- [ ] Contribute a PR for the RBC typings
+I have contributed a change which surfaces it in the typings package:
+
+https://github.com/DefinitelyTyped/DefinitelyTyped/pull/33580
