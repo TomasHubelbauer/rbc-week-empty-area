@@ -77,9 +77,16 @@ class HeaderComponent extends React.Component<any, never> {
   }
 }
 
+class TimeGutterHeaderComponent extends React.Component<any, never> {
+  render() {
+    // `.rbc-time-header-gutter`
+    return 'SUCCESS';
+  }
+}
+
 export default class App extends React.Component<AppProps, AppState> {
   private static readonly localizer: DateLocalizer = BigCalendar.momentLocalizer(moment);
-  private static readonly components: Components = {
+  private static readonly components: Components & any = {
     event: EventComponent,
     eventWrapper: EventWrapperComponent,
     eventContainerWrapper: EventContainerWrapperComponent,
@@ -89,6 +96,7 @@ export default class App extends React.Component<AppProps, AppState> {
     timeGutterWrapper: TimeGutterWrapperComponent,
     //toolbar: ToolbarComponent,
     header: HeaderComponent,
+    timeGutterHeader: TimeGutterHeaderComponent,
   };
 
   public readonly state: AppState = { view: 'month' };

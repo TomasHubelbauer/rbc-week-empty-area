@@ -139,7 +139,6 @@ the `dateCellWrapper` wrapper component, this one appears line above the output 
 
 ## Conclusion
 
-It appears as though the RBC component has no support for templating the empty area where the time
-gutter and the time grid headers meet in the week view.
+The required component `timeGutterHeader` is present on the calendar but not captured in the typings.
 
-- [ ] Contribute a component for this
+- [ ] Contribute a PR for the RBC typings
